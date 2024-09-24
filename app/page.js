@@ -104,11 +104,11 @@ export default function Home() {
         <h2 className="text-2xl font-bold text-center mb-4">What Our Clients Say</h2>
         <div className="space-y-6 mt-5 flex flex-col md:flex-row">
           <div className="mx-10 p-6 rounded-lg border border-purple-200 shadow-md flex-1">
-            <p className="italic">"This service is fantastic! Highly recommend to everyone."</p>
+            <p className="italic">This service is fantastic! Highly recommend to everyone.</p>
             <p className="text-right mt-4">- Happy Client</p>
           </div>
           <div className="p-6 mx-10 rounded-lg border border-purple-200 shadow-md flex-1">
-            <p className="italic">"A wonderful experience from start to finish."</p>
+            <p className="italic">A wonderful experience from start to finish.</p>
             <p className="text-right mt-4">- Satisfied Customer</p>
           </div>
         </div>

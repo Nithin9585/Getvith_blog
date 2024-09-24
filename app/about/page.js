@@ -44,13 +44,13 @@ export default function About() {
       <h2 className="text-2xl font-semibold mb-4">Testimonials</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="p-4 border  rounded-lg">
-          <p>"Working with [Your Company] was a fantastic experience. Their team was professional, knowledgeable, and always went above and beyond to meet our needs."</p>
+          <p>Working with [Your Company] was a fantastic experience. Their team was professional, knowledgeable, and always went above and beyond to meet our needs.</p>
           <p >
             - Sarah Johnson
           </p>
         </div>
         <div className="p-4 border rounded-lg">
-          <p>"The quality of their services is exceptional. They consistently deliver on time and within budget, and their attention to detail is impeccable."</p>
+          <p>The quality of their services is exceptional. They consistently deliver on time and within budget, and their attention to detail is impeccable.</p>
           <p >
             - David Lee
           </p>
