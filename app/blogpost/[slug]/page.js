@@ -8,6 +8,7 @@ import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import { unified } from 'unified';
 import rehypePrettyCode from "rehype-pretty-code";
+import Head from 'next/head'; 
 
 export async function generateStaticParams() {
     const contentDir = path.join(process.cwd(), 'app', 'content');
@@ -73,7 +74,14 @@ export default async function BlogPost({ params }) {
 
     const { content, data } = postData;
 
-    return (
+    return (<>
+        <Head>
+                <title>{data.title}</title>
+                <meta name="title" content={data.title} />
+                <meta name="description" content={data.description} />
+                <meta name="author" content={data.author} />
+                <meta name="date" content={data.date} />
+            </Head>
         <div className="max-w-5xl m-2 mx-auto p-6 rounded-lg shadow-lg ">
             <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
             <p className="text-lg mb-2">Author: <strong className="italic">{data.author}</strong></p>
@@ -82,5 +90,6 @@ export default async function BlogPost({ params }) {
             <div className="prose dark:prose-invert" style={{ lineHeight: '1.8' }} dangerouslySetInnerHTML={{ __html: content }}></div>
             <script async src="/public/gtag.js"></script>
         </div>
+        </>
     );
 }
